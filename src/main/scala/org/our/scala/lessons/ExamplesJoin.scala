@@ -39,32 +39,32 @@ object ExamplesJoin {
 
 
     // Ejemplo de union de tipo 'left'
-    /**
+    
     val resultadoLeft = df1.join(df2, Seq("id"), "left")
     println("Resultado Left Join:")
     resultadoLeft.show()
-    */
+    
 
     // Ejemplo de union de tipo 'right'
-    /**
+    
     val resultadoRight = df1.join(df2, Seq("id"), "right")
     println("Resultado Right Join:")
     resultadoRight.show()
-    */
+    
 
     // Ejemplo de union de tipo 'outer' o 'full'
-    /**
+    
     val resultadoOuter = df1.join(df2, Seq("id"), "outer")
     println("Resultado Outer Join:")
     resultadoOuter.show()
-    */
+    
 
     // Ejemplo de union utilizando union()
-    /**
+    
     val resultadoUnion = df1.union(df2)
     println("Resultado Union:")
     resultadoUnion.show()
-    */
+    
 
     // Cierra la sesión de Spark al finalizar
     spark.stop()
